@@ -5,10 +5,36 @@
 ?>
 
 <?php get_header() ?>
-<h2>contact form</h2>
-<div class="container">
-  <?php the_content() ?> 
-  <!-- 글 본문을 출력하는 함수 -->
+
+<div class="container about_content shadow">
+  <div class="contact">
+    <h3 class="heading6">Let's Get in Touch</h3>
+    <p>
+    You can call me, email me directly or connect with me through my social networks.
+    </p>
+    <p>
+      (+40) 744122222<br/>
+      <a href="mailto:hello@adipurdila.com">hello@adipurdila.com</a>               
+    </p>
+    <ul class="social_links">
+      <li><a href=""><img src="<?= IMAGES; ?>/twitter.png" alt="twitter"></a></li>
+      <li><a href=""><img src="<?= IMAGES; ?>/facebook.png" alt="facebook"></a></li>
+      <li><a href=""><img src="<?= IMAGES; ?>/dribble.png" alt="dribble"></a></li>
+    </ul>                                
+  </div>
+  <hr class="double">
+  <div class="form">
+    <h3 class="heading6">Need a Quote?</h3>
+    <p>
+      Use the form below. All fields are required.
+    </p>
+    <div class="contact_form">
+    <h2>contact form</h2>
+    <div class="container">
+      <?php echo do_shortcode( '[contact-form-7 id="88579d1" title="my contact form"]' )?>
+    </div>
+    </div>
+  </div>
 </div>
 
 <?php get_footer() ?>
